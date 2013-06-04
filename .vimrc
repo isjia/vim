@@ -14,7 +14,6 @@ set showmatch "显示对应的括号
 set encoding=utf-8 "设置编码
 set guifont=Menlo:h16:cANSI "设置字体
 "colorscheme torte "设置颜色主题
-set transparency=15 "设置透明度
 filetype plugin indent on "自动检测文件类型以调用相应的语法
 
 " pathogen插件配置
