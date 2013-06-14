@@ -13,9 +13,19 @@ set shiftwidth=4 "自动缩进时，使用4个空格，默认是8个
 set showmatch "显示对应的括号
 set encoding=utf-8 "设置编码
 set guifont=Menlo:h16:cANSI "设置字体
-"colorscheme torte "设置颜色主题
+
 filetype plugin indent on "自动检测文件类型以调用相应的语法
 
 " pathogen插件配置
 execute pathogen#infect()
 "execute pathogen#infect('bundle/{}', '~/src/vim/bundle/{}')
+
+"solarized插件配置
+syntax enable
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
+
